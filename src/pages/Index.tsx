@@ -25,7 +25,7 @@ import { useProducts } from '@/contexts/ProductContext';
 import { useCart } from '@/contexts/CartContext';
 import { useWishlist } from '@/contexts/WishlistContext';
 import { toast } from 'sonner';
-import heroImage from '@/assets/hero-banner.jpg';
+import heroImage from '@/assets/hero-banner.jpg'; // <-- PUT YOUR HERO IMAGE HERE
 
 // ✅ 6 Tribal art forms data with YouTube links and images
 const tribalArtForms = [
@@ -170,7 +170,7 @@ const TribalArtCarousel = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Cards Container */}
+          {/* Cards Container */} 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-16">
             {visibleCards.map((art, index) => (
               <Card 
